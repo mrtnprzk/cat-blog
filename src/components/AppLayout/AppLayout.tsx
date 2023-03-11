@@ -2,12 +2,16 @@ import { FC, ReactNode } from "react";
 import Head from "next/head";
 
 import Header from "../Header/Header";
+import { useTenantData } from "@/hooks/useTenantData";
 
 interface AppLayoutProps {
   children: ReactNode;
 }
 
 const AppLayout: FC<AppLayoutProps> = ({ children }) => {
+  const { data } = useTenantData();
+  console.log(data);
+
   return (
     <>
       <Head>
