@@ -1,3 +1,5 @@
+import Heading from "@/components/Typography/Heading";
+
 export default function EditArticle() {
-  return <h1 className="text-3xl font-bold">Edit article</h1>;
+  return <Heading>Edit article</Heading>;
 }

@@ -1,3 +1,5 @@
+import Heading from "@/components/Typography/Heading";
+
 export default function Home() {
-  return <h1 className="text-3xl font-bold">Recent articles</h1>;
+  return <Heading>Recent articles</Heading>;
 }

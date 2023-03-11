@@ -1,6 +1,7 @@
 import { FC } from "react";
 import Link from "next/link";
 import ArrowRight from "../../Icons/ArrowRight";
+import Anchor from "@/components/Typography/Anchor";
 
 const HeaderRight: FC = ({}) => {
   const isLoggedIn = false;
@@ -8,8 +9,10 @@ const HeaderRight: FC = ({}) => {
   return (
     <>
       {!isLoggedIn ? (
-        <div className="flex space-x-2 text-fontBlue">
-          <Link href={"/login"}>Log in</Link>
+        <div className="flex space-x-2">
+          <Link href={"/login"}>
+            <Anchor>Log in</Anchor>
+          </Link>
           <div className="w-4 my-auto">
             <ArrowRight />
           </div>

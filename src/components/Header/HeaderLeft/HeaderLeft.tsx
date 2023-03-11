@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { PATHNAME } from "../constants";
+import Paragraph from "@/components/Typography/Paragraph";
 
 const HeaderLeft: FC = () => {
   const { pathname } = useRouter();
@@ -13,25 +14,27 @@ const HeaderLeft: FC = () => {
       <Link href={`${PATHNAME.HOMEPAGE}`}>
         <Image src="/logo.svg" alt="logo" width={39} height={44} priority />
       </Link>
-      <Link
-        href={`${PATHNAME.HOMEPAGE}`}
-        className={
-          pathname === PATHNAME.HOMEPAGE
-            ? "text-fontGrayDark"
-            : "text-fontGrayLight"
-        }
-      >
-        Recent Articles
+      <Link href={`${PATHNAME.HOMEPAGE}`}>
+        <Paragraph
+          className={
+            pathname === PATHNAME.HOMEPAGE
+              ? "text-fontGrayDark"
+              : "text-fontGrayLight"
+          }
+        >
+          Recent Articles
+        </Paragraph>
       </Link>
-      <Link
-        href={`${PATHNAME.ABOUT}`}
-        className={
-          pathname === PATHNAME.ABOUT
-            ? "text-fontGrayDark"
-            : "text-fontGrayLight"
-        }
-      >
-        About
+      <Link href={`${PATHNAME.ABOUT}`}>
+        <Paragraph
+          className={
+            pathname === PATHNAME.ABOUT
+              ? "text-fontGrayDark"
+              : "text-fontGrayLight"
+          }
+        >
+          About
+        </Paragraph>
       </Link>
     </div>
   );
