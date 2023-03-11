@@ -1,7 +1,7 @@
 import { FC } from "react";
 
-import HeaderLeft from "./HeaderLeft";
-import HeaderRight from "./HeaderRight";
+import HeaderLeft from "./HeaderLeft/HeaderLeft";
+import HeaderRight from "./HeaderRight/HeaderRight";
 
 const Header: FC = () => {
   return (
