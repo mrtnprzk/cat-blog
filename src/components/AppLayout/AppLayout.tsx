@@ -21,9 +21,9 @@ const AppLayout: FC<AppLayoutProps> = ({ children }) => {
       </Head>
       <main className="flex flex-col w-full">
         <Header />
-        <main className="container mx-auto px-2 mt-4 md:mt-8 lg:mt-12 xl:mt-16">
+        <section className="container mx-auto px-2 my-4 md:my-8 lg:my-12 xl:my-16">
           {children}
-        </main>
+        </section>
       </main>
     </>
   );

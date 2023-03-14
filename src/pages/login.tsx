@@ -1,7 +1,7 @@
 import { FormEvent, useState } from "react";
 import { useTenantData } from "@/hooks/useTenantData";
 import { useMutateLogin } from "@/hooks/useMutateLogin";
-import LoginForm from "@/components/PageLogin/LoginForm";
+import LoginForm from "@/components/LoginForm/LoginForm";
 
 //TODO loginMutation success adn error handling
 
