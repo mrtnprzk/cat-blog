@@ -20,7 +20,7 @@ const Input: FC<InputProps> = ({
   const inputClass = "border rounded py-1.5 px-3";
 
   return (
-    <div className="flex flex-col space-y-2">
+    <div className="w-full flex flex-col space-y-2">
       {label ? <label>{label}</label> : null}
       {textarea ? (
         <textarea className={inputClass} />
