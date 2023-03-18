@@ -41,7 +41,7 @@ const LoginForm: FC<LoginFormProps> = ({
         onChange={(e) => setPassword(e.target.value)}
         value={password}
       />
-      <span className="py-2"/>
+      <span className="py-2" />
       <Button disabled={loading} className="ml-auto" type="submit">
         Log In
       </Button>
